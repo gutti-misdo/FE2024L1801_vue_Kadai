@@ -1,0 +1,48 @@
+<!-- トップページHTML -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js課題 おみくじ</title>
+    <style>
+        /* 統一した背景色 */
+        .fortune-bg {
+          background-color: #f0e68c; /* 薄い黄色 */
+          padding: 20px;
+          border-radius: 8px;
+          margin-top: 20px;
+        }
+      </style></head>
+<body> 
+    <div id="app">
+        <label for="name">名前を入力してください：</label>
+        <!-- 名前入力 -->
+        
+        <!-- おみくじを引くボタン、名前入力が5文字以下の場合は押せないようにする -->
+    
+        <!-- エラーメッセージ -->
+        <p v-if="!isValidName" style="color: red;">{{ errorMessage }}</p>
+        <!-- p v-if="errorMessage" style="color: red;">{{ errorMessage }}</p-->
+    
+        <!-- 名前の表示と運勢の画像 -->
+        <!-- 5文字以上の名前入力かつ、運勢確定した場合 -->
+
+        <!-- 名前の表示 -->
+          <p>{{ name }}さんの運勢は…</p>
+          <!-- 運勢が大吉だった場合、大吉画像表示 -->
+
+          <!-- 運勢が吉だった場合、吉画像表示 -->
+
+          <!-- 運勢が中吉だった場合、中吉画像表示 -->
+
+          <!-- 運勢が小吉だった場合、小吉画像表示 -->
+
+          <!-- 運勢が凶だった場合、凶画像表示 -->
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+</html>
